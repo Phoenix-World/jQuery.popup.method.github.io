@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQpopUp</title>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+	*{margin: 0; padding: 0; box-sizing: border-box;}
+
+	body{background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjK96FJxCoUKwwPpmzYz-_fFB0Kl_S8Qhuw&usqp=CAU);}
+
+	#pop {position: absolute; left: 50%; top: 50%; 
+		  transform: translate(-50% , -50%);
+		  width: 15vw; height: 15vh; border-radius: 15px;
+		  font-size: 50px; cursor: pointer;}
+</style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+<button onclick="popUp()" id="pop">Click Me</button>
+
+<script>
+	function popUp(){
+		swal({
+  title: "great Job!",
+  text: "You clicked the button!",
+  icon: "success",
+  button: "Ok!",
+});
+	}
+</script>
+</body>
+</html>
